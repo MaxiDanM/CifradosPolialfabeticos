@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Cifrado Cesar o Viggenere</title>
+</head>
+<body>
+
+    <h1>Cifrado César y Vigenère</h1>
+    <div class="container">
+        <label for="message">Mensaje:</label>
+        <textarea id="message" class="animation" rows="4" cols="50"></textarea>
+        <label for="key">Clave:</label>
+        <input type="text" id="key" class="animation">
+        <label for="method">Método:</label>
+        <select id="method" class="animation">
+            <option value="cesar">Cifrado César</option>
+            <option value="vigenere">Cifrado Vigenère</option>
+        </select>
+        <button id="encrypt" class="animation">Cifrar</button>
+        <button id="decrypt" class="animation">Descifrar</button>
+    </div>
+    <div class="container">
+        <label for="result">Resultado:</label>
+        <textarea id="result" class="result animation" rows="4" cols="50" readonly></textarea>
+    </div>
+    <script src="./js/script.js"></script>
+    
+</body>
+</html>
